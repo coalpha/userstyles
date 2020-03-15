@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name           ESLint Ayu Kinda
+@namespace      github.com/coalpha/userstyles
+@version        0.0.1
+@description    I needed a dark theme for eslint's website and this is what I get.
+@author         coalpha
+==/UserStyle== */
+
+body, header#top, pre, .hljs {
+   background-color: #0A0E14;
+   color: #B3B1AD;
+}
+
+header#top {
+   border-bottom: 2px solid #3D424D;
+}
+
+a {
+   color: #d4bfff;
+   text-decoration: underline;
+}
+
+a:focus, a:hover, .hljs-number {
+   color: #977bcf;
+}
+
+code {
+   background-color: #000;
+   color: #8989dd;
+}
+
+pre, .hljs {
+   --b: solid #3D424D;
+   border: 2px var(--b);
+   border-radius: 0px;
+}
+
+pre, .hljs {
+   box-shadow: 10px 10px#07090d;
+}
+
+.navbar-default .navbar-nav > .dropdown > a, .dropdown-menu > li > a {
+   color: #eed !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+   color: #bdb4c6;
+}
+
+.navbar-default .navbar-nav > .dropdown.open > a, .dropdown-menu {
+   background-color: #22252d;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+   background-color: #0d121a;
+}
+
+.hljs-keyword {
+   color: #F07178;
+}
+
+.hljs-title {
+   color: #FFB454;
+}
+
+.hljs-built_in {
+   color: #95E6CB;
+}
+
+.hljs-params {
+   color: #E6B673;
+}
+
+.hljs-string {
+   color: #C2D94C;
+}
