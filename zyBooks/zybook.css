@@ -7,116 +7,122 @@
 ==/UserStyle== */
 
 @-moz-document domain("learn.zybooks.com") {
-  :root {
-    --accent: #FFCC66;
-    --bg: #1F2430;
-    --fg: #CBCCC6;
-    --ui: #414650;
-    --tag: #5CCFE6;
-    --func: #FFD580;
-    --entity: #73D0FF;
-    --string: #BAE67E;
-    --regexp: #95E6CB;
-    --markup: #F28779;
-    --keyword: #FFA759;
-    --special: #FFE6B3;
-    --comment: #5C6773;
-    --constant: #D4BFFF;
-    --operator: #F29E74;
-    --error: #FF3333 --added: #A6CC70;
-    --modified: #77A8D9;
-    --removed: #F27983;
-  }
-  html {
-    scrollbar-color: var(--comment) var(--ui);
-  }
-  body {
-    scrollbar-color: #bbb #ddd;
-  }
-  .hljs-meta, .hljs-title {
-    color: var(--fg) !important;
-  }
-  .hljs-meta-keyword {
-    color: var(--removed) !important;
-  }
-  .hljs-meta-string {
-    color: var(--accent) !important;
-  }
-  .hljs-keyword {
-    color: var(--keyword) !important;
-  }
-  .hljs-built_in {
-    color: var(--regexp) !important;
-  }
-  .hljs-string, .no-output-result {
-    color: var(--string) !important;
-  }
-  .hljs-params {
-    color: var(--func) !important;
-  }
-  .hljs-number {
-    color: var(--constant) !important;
-  }
-  .test-result .test-header .test-title-container {
-    color: #bbb !important;
-  }
-  .top-toolbar {
-    background-color: var(--bg);
-    box-sizing: border-box;
-    border: 2px solid var(--ui);
-  }
-  .section-nav, .zb-card-content, .static-container, .interactive-activity-container, textarea, .ace-dreamweaver, .animation-canvas, .zyante-progression-reset-button, .zyante-progression-status-bar, div.output, .programming-code-output {
-    box-shadow: none !important;
-    border: 2px solid var(--ui) !important;
-    background-color: var(--bg) !important;
-  }
-  .route-container, .zb-card, .zb-menu .rl-dropdown-toggle, table {
-    background-color: var(--bg) !important;
-  }
-  button .zb-menu .rl-dropdown-toggle, .static-container-title {
-    color: var(--fg) !important;
-  }
-  div.console {
-    border-radius: 0 !important;
-    border: none !important;
-    border-left: 4px solid var(--comment) !important;
-    border-top: 4px solid var(--comment) !important;
-  }
-  .code, .console {
-    background: none !important;
-  }
-  .ace-editor {
-    background: none !important;
-    filter: invert(1) brightness(1) saturate(30) hue-rotate(-60deg);
-    font-family: Consolas, monospace;
-    font-size: 15px;
-  }
-  .zb-button.raised {
-    background-color: var(--operator) !important;
-  }
-  pre {
-    background: none !important;
-    filter: invert(1) brightness(0.8) hue-rotate(20deg);
-    font-family: Consolas, monospace;
-    font-size: 15px;
-  }
-  button {
-    border-radius: 0 !important;
-    color: #eee !important;
-  }
-  .activity-description, .activity-title-bar, .activity-type {
-    background-color: var(--ui) !important;
-  }
-  textarea {
-    color: var(--fg);
-    font-family: Consolas, monospace !important;
-    font-size: 20px !important;
-    line-height: 13px;
-  }
-  img.zyante-progression-checkmark {
-    filter: invert(1) hue-rotate(180deg);
-  }
-  h3, .bread-crumbs, a, .material-icons, .section-nav, .zb-card, .zybook-chapter-section-page, .zybook-section, .zybook-section-title, .activity-payload, .zybook-section .term, .explanation-description, div.output, .programming-code-output {
-    color: var(--fg) !important;
-  }
+   :root {
+      --accent: #FFCC66;
+      --bg: #1F2430;
+      --fg: #CBCCC6;
+      --ui: #414650;
+      --tag: #5CCFE6;
+      --func: #FFD580;
+      --entity: #73D0FF;
+      --string: #BAE67E;
+      --regexp: #95E6CB;
+      --markup: #F28779;
+      --keyword: #FFA759;
+      --special: #FFE6B3;
+      --comment: #5C6773;
+      --constant: #D4BFFF;
+      --operator: #F29E74;
+      --error: #FF3333 --added: #A6CC70;
+      --modified: #77A8D9;
+      --removed: #F27983;
+   }
+   html, .table-of-contents-list {
+      scrollbar-color: var(--comment) var(--ui);
+   }
+   body {
+      scrollbar-color: #bbb #ddd;
+   }
+   .hljs-meta, .hljs-title {
+      color: var(--fg) !important;
+   }
+   .hljs-meta-keyword {
+      color: var(--removed) !important;
+   }
+   .hljs-meta-string {
+      color: var(--accent) !important;
+   }
+   .hljs-keyword {
+      color: var(--keyword) !important;
+   }
+   .hljs-built_in {
+      color: var(--regexp) !important;
+   }
+   .hljs-string, .no-output-result {
+      color: var(--string) !important;
+   }
+   .hljs-params {
+      color: var(--func) !important;
+   }
+   .hljs-number {
+      color: var(--constant) !important;
+   }
+   .test-result .test-header .test-title-container {
+      color: #bbb !important;
+   }
+   .top-toolbar {
+      background-color: var(--bg);
+      box-sizing: border-box;
+      border: 2px solid var(--ui);
+   }
+   .section-nav, .zb-card-content, .static-container, .interactive-activity-container, textarea, .ace-dreamweaver, .animation-canvas, .zyante-progression-reset-button, .zyante-progression-status-bar, div.output, .programming-code-output, .toc-header, .toc-header-common, .section-list {
+      box-shadow: none !important;
+      border: 2px solid var(--ui) !important;
+      background-color: var(--bg) !important;
+   }
+   .route-container, .zb-card, .zb-menu .rl-dropdown-toggle, table {
+      background-color: var(--bg) !important;
+   }
+   button .zb-menu .rl-dropdown-toggle, .static-container-title {
+      color: var(--fg) !important;
+   }
+   div.console {
+      border-radius: 0 !important;
+      border: none !important;
+      border-left: 4px solid var(--comment) !important;
+      border-top: 4px solid var(--comment) !important;
+   }
+   .code, .console {
+      background: none !important;
+   }
+   .ace-editor {
+      background: none !important;
+      filter: invert(1) brightness(1) saturate(30) hue-rotate(-60deg);
+      font-family: Consolas, monospace;
+      font-size: 15px;
+   }
+   *::selection, .ace_selection {
+      background-color: grey !important;
+   }
+   .ace_comment {
+      color: grey !important;
+   }
+   .zb-button.raised {
+      background-color: var(--operator) !important;
+   }
+   pre {
+      background: none !important;
+      filter: invert(1) brightness(0.8) hue-rotate(20deg);
+      font-family: Consolas, monospace;
+      font-size: 15px;
+   }
+   button {
+      border-radius: 0 !important;
+      color: #eee !important;
+   }
+   .activity-description, .activity-title-bar, .activity-type {
+      background-color: var(--ui) !important;
+   }
+   textarea {
+      color: var(--fg);
+      font-family: Consolas, monospace !important;
+      font-size: 20px !important;
+      line-height: 13px;
+   }
+   img.zyante-progression-checkmark {
+      filter: invert(1) hue-rotate(180deg);
+   }
+   h3, .bread-crumbs, a, .material-icons, .section-nav, .zb-card, .zybook-chapter-section-page, .zybook-section, .zybook-section-title, .activity-payload, .zybook-section .term, .explanation-description, div.output, .programming-code-output, .chapter-title, .section-title, span.common-error {
+      color: var(--fg) !important;
+   }
 }
